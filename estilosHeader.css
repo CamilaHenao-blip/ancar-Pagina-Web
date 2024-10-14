@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+* { margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; }
+
+
+ .Contenedor { 
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.header {
+    background-image: url(./Img/abrir-tu-salon-peluqueria.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    align-items: center;
+    display: flex;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .navHeader ul li { 
+    position: relative;
+    float: left;
+}
+.menu .navHeader ul li a{
+    font-size: 1.5rem;
+    padding: 20px;
+    color: rgb(144, 12, 63);
+    display: block;
+    font-weight: 600;
+ }
+
+ #menu { display: none;}
+
+ .menuImg { width: 30%;}
+
+ .menu label {
+    cursor: pointer;
+    display: none;
+ }
+
+ body {
+    background-color: rgb(255, 229, 182); 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textoAgendacita{
+    text-align: center;
+}
+
+.textoAgendacita h2{
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(199, 0, 57);
+    margin: 25px;
+}
+
+.textoAgendacita p{
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(252, 253, 193);
+}
