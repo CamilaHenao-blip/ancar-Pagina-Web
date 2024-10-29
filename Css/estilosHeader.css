@@ -2,14 +2,14 @@
 
 
 * { margin: 0;
-    padding: auto;
+    padding: inherit;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none; }
 
 
- .Contenedor { 
-    max-width: 1200px;
+ .Contenedor {
+    padding: 0px 10px 0px 10px;
     margin: 0 auto;
   }
 
@@ -21,6 +21,11 @@
     overflow: hidden;
 }
 
+/*Scroll*/
+.menu.down{
+    background: rgb(205 149 122);
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -30,9 +35,11 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    transition: 0.7s;
 }
 
-.logo{ padding: 20px;}
+.logo{ padding: 25px;}
+
 
 .menu .navHeader ul li { 
     position: relative;
@@ -57,6 +64,7 @@
     display: none;
  }
 
+ /*Carrusel*/
  .carrusel{
     position: relative;
     top: 0;
@@ -120,6 +128,7 @@
     margin: 50px;
 }
 
+/*Animación para el carrusel*/
  @keyframes slide{
     0% { margin-left: 0; }
     25% { margin-left: 0; }
@@ -129,21 +138,25 @@
 
     80% { margin-left: -200%; }
     100% { margin-left: -200%; }
-}
+} 
 
-@media (max-width: 800px) {  
-    .textoCarrusel h2 {font-size: 5vw;}
+/*medida para tablet*/
+@media (max-width: 810px) {  
+    .textoCarrusel h2 {font-size: 45px;}
     
     .textoCarrusel p{
-         font-size: 3vw;
+         font-size: 22px;
          padding: 10px;}
+
+    .logo{font-size: 20px;}
     
 }
 
+/*menú repositive*/
 @media (max-width: 840px){ 
 
-    .menu .navHeader{ 
-        position: fixed right;
+    .navHeader{ 
+        position: fixed !important;
         top: 0;
         left: 0;
         background: rgb(117, 57, 7);
@@ -153,6 +166,8 @@
         z-index: 1;
         display: none;
     }
+
+    #menu:checked + label + .navHeader{display: flex;}
 
     .menu .navHeader ul{ 
         flex-direction: column;
@@ -172,9 +187,21 @@
     #menuImagen{ 
         display: flex;
         justify-content: right;
+        
     }
-
-    #menuImagen:checked ~ .navHeader{display: block;}
     
+}
+
+/*medida para celular*/
+@media (max-width: 480px) {  
+    .textoCarrusel h2 {font-size: 30px;}
+    
+    .textoCarrusel p{
+         font-size: 18px;
+         padding: 10px;}
+
+    .logo{font-size: 20px;}
+
+    .menu label{transform: translateY(-10px);}
 }
 
