@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/sesion.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Registro e inicio de sesión</title>
+</head>
+<body>
+    
+    <div class="contenedorSesion">
+        <div class="informacion">
+            <div class="infoSesion">
+                <h2>Bienvenido</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt harum illum, quasi, hic est amet cupiditate reprehenderit sit natus ratione, fugiat quas aliquid voluptatem. 
+                    In harum odio numquam quos veniam.</p>
+                <input type="button" value="Iniciar sesión">
+            </div>
+        </div>
+
+        <div class="inicioInformacion">
+
+            <div class="inicioInformacionChilds">
+                <h2>Crear cuenta</h2>
+            </div>
+            
+            <div class="iconos">
+                <i class='bx bxl-google'></i>
+            </div>
+            <p>O registrate de esta forma</p>
+            <form>
+                <label >
+                    <i class="user"></i>
+                    <input type="text" placeholder="Nombres">
+                </label>
+                <label >
+                    <input type="text" placeholder="Apellidos">
+                </label>
+                <label >
+                    <i class='bx bx-envelope'></i>
+                    <input type="text" placeholder="E-mail">
+                </label>
+                <label >
+                    <i class='bx bx-lock-alt'></i>
+                    <input type="password" placeholder="Contraseña">
+                </label>
+                <label >
+
+                    <h3>Género</h3>
+                    <div>
+                        <i class='bx bx-female' onclick="registerSex('famele')"></i>
+                        <span>Femenino</span>
+                    </div>
+
+                    <div>
+                        <i class='bx bx-male' onclick="registerSex('male')"></i>
+                        <span>Masculino</span>
+                    </div>
+                    <div>
+                        <i class='bx bxs-ghost'></i>
+                        <span>Otro</span>
+                    </div>
+
+                </label>
+                <input type="submit" value="Resgistrarse">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

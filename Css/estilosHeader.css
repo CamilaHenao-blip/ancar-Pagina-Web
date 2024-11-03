@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-
 * { margin: 0;
     padding: inherit;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none; }
+    list-style: none; 
+}
 
+body {
+    background-color: #f7bc74; 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
- .Contenedor {
+.Contenedor {
     padding: 0px 10px 0px 10px;
     margin: 0 auto;
-  }
+}
 
 .header {
     position: relative;
@@ -22,8 +29,8 @@
 }
 
 /*Scroll*/
-.menu.down{
-    background: rgb(205 149 122);
+.menu.down {
+    background: #fff
 }
 
 .menu {
@@ -38,62 +45,69 @@
     transition: 0.7s;
 }
 
-.logo{ padding: 25px;}
-
+.logo { 
+    padding: 25px;
+}
 
 .menu .navHeader ul li { 
     position: relative;
     float: left;
 }
-.menu .navHeader ul li a{
+
+.menu .navHeader ul li a {
     font-size: 1.5rem;
-    padding: 20px;
     color: rgb(144, 12, 63);
     display: block;
     font-weight: 600;
- }
+}
 
- #menu { display: none;}
+#menu { 
+    display: none;
+}
 
- .menuImg { 
+.closeMenu{display: none;}
+
+.menuImg { 
     margin-top: 20px;
-    width: 18%;}
+    width: 18%;
+}
 
- .menu label {
+.menu label {
     cursor: pointer;
     display: none;
- }
+}
 
- /*Carrusel*/
- .carrusel{
+
+/*Carrusel*/
+.carrusel{
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
- }
+}
 
- .carrusel ul {
+.carrusel ul {
     display: flex;
     padding: 0;
     width: calc(100% * 3);
     animation: slide 15s infinite alternate ease-in-out;
- }
+}
 
- .carrusel-item {
+.carrusel-item {
     width: 100vw;
     height: 100vh;
     list-style: none;
     position: relative;
- }
+}
 
- .carrusel img{
+.carrusel img{
     width: 100%;
     height: 100%;
     object-fit: cover;
- }
+}
 
- .textoCarrusel{
+.textoCarrusel{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -102,34 +116,26 @@
     text-align: center;
     max-width: 90%;
     padding: 10px;
- }
+}
 
- .textoCarrusel h2{
+.textoCarrusel h2{
     font-size: 3vw;
     margin-top: 10px;
- }
+}
 
- .textoCarrusel p{
+.textoCarrusel p{
     font-size: 2vw;
     margin: 0;
     padding: 10px;
- }
-
- 
- body {
-    background-color: rgb(255, 229, 182); 
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
+
 .textoRelleno{
     margin-top: 70px;
     margin: 50px;
 }
 
 /*Animación para el carrusel*/
- @keyframes slide{
+@keyframes slide{
     0% { margin-left: 0; }
     25% { margin-left: 0; }
 
@@ -140,68 +146,88 @@
     100% { margin-left: -200%; }
 } 
 
+
 /*medida para tablet*/
 @media (max-width: 810px) {  
     .textoCarrusel h2 {font-size: 45px;}
     
-    .textoCarrusel p{
+    .textoCarrusel p {
          font-size: 22px;
-         padding: 10px;}
+         padding: 10px;
+        }
 
-    .logo{font-size: 20px;}
-    
+    .logo {
+        font-size: 20px;
+    }
 }
 
 /*menú repositive*/
-@media (max-width: 840px){ 
-
-    .navHeader{ 
-        position: fixed !important;
+@media (max-width: 840px) {  
+    .navHeader { 
+        position: fixed;
         top: 0;
-        left: 0;
+        right: -100%; /* Menú oculto por defecto */
         background: rgb(117, 57, 7);
         width: 250px;
         height: 100vh;
-        padding-top: 40px;
-        z-index: 1;
-        display: none;
-    }
-
-    #menu:checked + label + .navHeader{display: flex;}
-
-    .menu .navHeader ul{ 
         flex-direction: column;
+        transition: right 0.3s ease; 
     }
 
-    .menu .navHeader ul li{ 
-        margin-top: 30px;
+    .navHeader.active {
+        right: 0; 
+    }
+
+    /* Estilos para el boton de cierre ("X") */
+    .closeMenu {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .menu .navHeader ul { 
+        flex-direction: column;
+        margin-top: 50px; /* Espacio debajo del botón de cierre */
+    }
+
+    .menu .navHeader ul li { 
+        margin-top: 40px;
         margin-left: 0;
     }
 
-    .menu .navHeader ul li a{
-        color: rgb(10, 3, 3);
+    .menu .navHeader ul li a {
+        color: rgb(206, 139, 84);
     }
 
-    #ingresar{ color: rgb(252, 133, 97);}
-
-    #menuImagen{ 
+    #menuImagen { 
+        margin-bottom: 20px;
         display: flex;
         justify-content: right;
-        
     }
-    
 }
+
+
 
 /*medida para celular*/
 @media (max-width: 480px) {  
-    .textoCarrusel h2 {font-size: 30px;}
+    .textoCarrusel h2 {
+        font-size: 30px;
+    }
     
-    .textoCarrusel p{
+    .textoCarrusel p {
          font-size: 18px;
-         padding: 10px;}
+         padding: 10px;
+        }
 
-    .logo{font-size: 20px;}
+    .logo {
+        font-size: 20px;
+    }
 
-    .menu label{transform: translateY(-10px);}
+    .menu label {
+        transform: translateY(-10px);
+    }
 }
-
