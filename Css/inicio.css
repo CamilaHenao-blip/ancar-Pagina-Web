@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../Img/highlights-caramelo\ \(1\).jpg);
+    background-size: cover;
+}
+
+.header{
+    position: absolute;
+    padding:10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header a{
+    font-size: 20px;
+    color: black;
+}
+
+.header a:hover {
+    color: orange;
+}
+
+.contenedorInicio {
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    width: 400px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+    overflow:hidden;
+    transition: all 1s ease;
+    background: rgb(255, 226, 188);
+
+}
+
+.inicioSesion {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.inicioSesion h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form {
+    margin: 30px;
+}
+
+.form .datosInicio label {
+    display: flex;
+    border: solid thin rgba(247, 162, 106, 0.925);
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .1);
+}
+
+.form label input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+#botones {
+    flex-direction: column;
+}
+
+#botones input {
+    font-size: 16px;
+    display: flex;
+    margin: 0 115px;
+    background-color: transparent;
+    outline: none;
+    width: 110px;
+    border: solid 2px rgb(250, 189, 110);
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+
+#botones input:hover {
+    background-color: burlywood;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+#botones a {
+    color: #333;
+    display: flex;
+    margin: 0 113px;
+    background-color: transparent;
+    outline: none;
+    width: 119px;
+    border: solid 2px rgb(250, 189, 110);
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+#botones a:hover {
+    background-color: burlywood;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+
+.texto {
+    margin: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 12px;
+    }
+    #botones a{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    html {
+        font-size: 10px;
+    }
+
+    .contenedorInicio {
+        align-items: center;
+        margin: 30px 0 30px 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+}

@@ -5,69 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/sesion.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Registro e inicio de sesión</title>
+    <title>Registro o inicio de sesión</title>
 </head>
 <body>
     
+    <header class="header">
+        <a href="../index.html" class="logo"><h3>Ancar</h3></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html"><h3>Inicio</h3></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="contenedorSesion">
         <div class="informacion">
             <div class="infoSesion">
-                <h2>Bienvenido</h2>
+                <h2>Bienvenid@</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt harum illum, quasi, hic est amet cupiditate reprehenderit sit natus ratione, fugiat quas aliquid voluptatem. 
                     In harum odio numquam quos veniam.</p>
-                <input type="button" value="Iniciar sesión">
+                <a href="../Html/inicio.html">Iniciar sesión</a>
             </div>
         </div>
+
+        <!-- Crear cuenta -->
 
         <div class="inicioInformacion">
 
             <div class="inicioInformacionChilds">
                 <h2>Crear cuenta</h2>
             </div>
-            
-            <div class="iconos">
-                <i class='bx bxl-google'></i>
-            </div>
-            <p>O registrate de esta forma</p>
-            <form>
+
+        <!-- Registro de sesión -->
+
+            <form class="form">
+            <div class="datos">
                 <label >
                     <i class="user"></i>
-                    <input type="text" placeholder="Nombres">
+                    <input type="text" placeholder="Nombres" required>
                 </label>
                 <label >
-                    <input type="text" placeholder="Apellidos">
+                    <input type="text" placeholder="Apellidos" required>
                 </label>
                 <label >
                     <i class='bx bx-envelope'></i>
-                    <input type="text" placeholder="E-mail">
+                    <input type="email" placeholder="E-mail" required>
                 </label>
-                <label >
+
+                <label>
                     <i class='bx bx-lock-alt'></i>
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" placeholder="Contraseña" required>
                 </label>
-                <label >
 
-                    <h3>Género</h3>
-                    <div>
-                        <i class='bx bx-female' onclick="registerSex('famele')"></i>
-                        <span>Femenino</span>
-                    </div>
+            </div>
 
-                    <div>
-                        <i class='bx bx-male' onclick="registerSex('male')"></i>
-                        <span>Masculino</span>
+                <div class="genero">
+                    <h3 id="gender-label">Género:</h3>
+                    <div class="gender" onclick="registerSex('female')">
+                        <i class='bx bx-female'></i>
+                        <span class="generoPalabra">Femenino</span>
                     </div>
-                    <div>
+                    <div class="gender" onclick="registerSex('male')">
+                        <i class='bx bx-male'></i>
+                        <span class="generoPalabra">Masculino</span>
+                    </div>
+                    <div class="gender" onclick="registerSex('other')">
                         <i class='bx bxs-ghost'></i>
-                        <span>Otro</span>
+                        <span class="generoPalabra">Otro</span>
                     </div>
-
+                </div>
+                
+                <label>
+                 <input type="submit" value="Resgistrarse">
                 </label>
-                <input type="submit" value="Resgistrarse">
+                
             </form>
         </div>
     </div>
-
 
 </body>
 </html>
