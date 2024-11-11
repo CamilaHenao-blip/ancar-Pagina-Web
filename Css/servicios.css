@@ -8,7 +8,6 @@
 }
 
 body { 
-    background-color: #ffffff;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -77,10 +76,12 @@ body {
 
 .closeMenu{display: none;}
 
-.menuImg { 
-    margin-right: 20px;
+.menuImg {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
-    width: 18%;
+    width: 30%;
 }
 
 .menu label {
@@ -180,6 +181,74 @@ body {
     transform: translateY(-5px);
 }
 
+/*Footer*/
+
+
+
+.contenedorFooter{
+    margin-top: 30px;
+    background-color: black;
+    padding: 30px;
+}
+
+.footerRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksFooter {
+    color: #fff;
+    padding: 0 40px 40px 40px;
+
+}
+
+.linksFooter a{
+    color: #f58505;
+    transition: all 0.5s ease;
+}
+
+.linksFooter a:hover{
+    color: #f53505;
+    transform: translateY(-5px);
+}
+
+.linksFooter h4{
+    padding: 20px;
+    text-align: center;
+
+}
+
+.elementos ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.elementos ul li{
+    margin-right: 10px;
+}
+
+.elementos ul li a{
+    display: inline-block;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social a i{
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.derechos{
+    color: #fff;  
+    text-align: center;
+}
+
+
 @media (max-width: 840px) {  
     .navHeader { 
         position: fixed;
@@ -229,6 +298,25 @@ body {
     }
 }
 
+/*medida para tablet*/
+@media (max-width: 810px) {  
+    .textoCarrusel h2 {font-size: 45px;}
+    
+    .textoCarrusel p {
+         font-size: 22px;
+         padding: 10px;
+        }
+
+    .logo {
+       padding: 7px;
+    }
+
+    .menuImg{ 
+        width: 20%;
+    }
+
+    
+}
 
 
 /*medida para celular*/
