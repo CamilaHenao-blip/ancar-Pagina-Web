@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* { 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+}
+
+body { 
+    background-color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.header {
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 86vh;
+    overflow: hidden;
+}
+
+
+.Contenedor {
+    padding: 0px 10px 0px 10px;
+    margin: 0 auto;
+}
+
+/*Scroll*/
+.menu.down {
+    background: #f58505
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: 0.7s;
+}
+
+.logo { 
+    padding: 25px;
+    color: black;
+}
+
+.menu .navHeader ul li { 
+    position: relative;
+    float: left;
+}
+
+.menu .navHeader ul li a {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: rgb(255, 193, 100);
+    display: block;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.menu .navHeader ul li a:hover{
+    color: #f53505;
+}
+
+
+#menu { 
+    display: none;
+}
+
+.closeMenu{display: none;}
+
+.menuImg { 
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 18%;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/*Servicios*/
+
+.Servicios{
+    margin-top: 80px;
+}
+.titulo h2{
+    margin: 20px;
+    text-align: center;
+    font-size: 2.2rem;
+    
+}
+
+#Servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.serviciosContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.serviciosBox{
+    width: 300px;
+    height: 415px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin: 15px;
+}
+
+.serviciosImagen{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.serviciosImagen img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.uñasManos img{
+    transform: translateY(-90px);
+}
+
+.serviciosTexto{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+}
+.serviciosTexto strong{
+    font-size: 1.5rem
+}
+
+.p{
+    margin: 10px;
+}
+
+.p p{
+    font-size: 0.9rem;
+}
+
+.agendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agendarA{
+    padding: 8px;
+    background-color: #f38303;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.agendarA:hover{
+    background-color: #f55105;
+    transform: translateY(-5px);
+}
+
+@media (max-width: 840px) {  
+    .navHeader { 
+        position: fixed;
+        top: 0;
+        right: -100%; /* Menú oculto por defecto */
+        background: rgb(117, 57, 7);
+        width: 250px;
+        height: 100vh;
+        flex-direction: column;
+        transition: right 0.3s ease; 
+    }
+
+    .navHeader.active {
+        right: 0; 
+    }
+
+    /* Estilos para el boton de cierre ("X") */
+    .closeMenu {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .menu .navHeader ul { 
+        flex-direction: column;
+        margin-top: 50px; /* Espacio debajo del botón de cierre */
+    }
+
+    .menu .navHeader ul li { 
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .menu .navHeader ul li a {
+        color: rgb(206, 139, 84);
+    }
+
+    #menuImagen { 
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: right;
+    }
+}
+
+
+
+/*medida para celular*/
+@media (max-width: 480px) { 
+    html{
+        font-size: 15px;
+    } 
+    .textoCarrusel h2 {
+        font-size: 30px;
+    }
+    
+    .textoCarrusel p {
+         font-size: 18px;
+         padding: 10px;
+        }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu label {
+        transform: translateY(-10px);
+    }
+}
+

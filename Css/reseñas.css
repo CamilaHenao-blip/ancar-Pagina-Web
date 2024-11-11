@@ -90,6 +90,7 @@ body {
     display: none;
 }
 
+/*Reseñas*/
 #reseñas{
     display: flex;
     justify-content: center;
@@ -112,7 +113,6 @@ body {
     width: 523px;
     height: 220px;
     border-radius: 30px;
-    width: 500px;
     box-shadow:  2px 2px 30px rgba(90, 41, 1, 0.315);
     background-color: #fff;
     padding: 20px;
@@ -228,10 +228,6 @@ body {
     font-size: 30px;
 }
 
-.divdereechos{
-    display: flex;
-    text-align: center;
-}
 .derechos{
     color: #fff;  
     text-align: center;
