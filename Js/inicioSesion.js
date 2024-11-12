@@ -1,13 +1,23 @@
 let formInicio = document.getElementById("form");
 
-formRegistro.addEventListener("submit", function(e){
-    e.preventDefault();
+formInicio.addEventListener("submit", function(e){
 
     const emailInicio = document.getElementById("email").value;
     const passInicio = document.getElementById("Contraseña").value;
 
     const userStorage = JSON.parse(localStorage.getItem("user"));
 
-    window.location.href = "../Html/inicio.html";
+    console.log(emailInicio + " " +passInicio);
+    console.log(userStorage.correo + " " + userStorage.pass);
 
-})
+    if(emailInicio == userStorage.correo  && passInicio == userStorage.pass){
+
+        alert("sfdf");
+          window.location.href = "../index.html";
+    }
+    else{
+        alert("Contraseña o correo incorrecto");
+    }
+ });
+
+
