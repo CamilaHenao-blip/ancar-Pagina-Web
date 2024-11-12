@@ -40,23 +40,23 @@
 
         <!-- Registro de sesión -->
 
-            <form class="form">
+        <form class="form" id="registroF">
             <div class="datos">
                 <label >
                     <i class="user"></i>
-                    <input type="text" placeholder="Nombres" required>
+                    <input type="text" placeholder="Primer nombre" id="nombres" name="nombres" required>
                 </label>
                 <label >
-                    <input type="text" placeholder="Apellidos" required>
+                    <input type="text" placeholder="Primer apellido" id="apellidos" name="apellidos" required>
                 </label>
                 <label >
                     <i class='bx bx-envelope'></i>
-                    <input type="email" placeholder="E-mail" required>
+                    <input type="email" placeholder="E-mail" id="email" name="email" required>
                 </label>
 
                 <label>
                     <i class='bx bx-lock-alt'></i>
-                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" placeholder="Contraseña" id="password" name="password" required>
                 </label>
 
             </div>
@@ -85,5 +85,6 @@
         </div>
     </div>
 
+    <script src="../Js/registrarse.js"></script>
 </body>
 </html>
