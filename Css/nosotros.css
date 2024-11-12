@@ -68,6 +68,24 @@ body {
 }
 
 
+/*user*/
+
+.userU{
+    display: none;
+}
+
+.ea{
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: rgb(255, 193, 100);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ea:hover{
+    color: #c52e00; 
+}
+
 #menu { 
     display: none;
 }
@@ -281,6 +299,11 @@ body {
 }
 .calidadContenedor img{
     width: 90%;
+}
+
+ /*userU*/
+ .ea{
+    color: rgb(206, 139, 84);
 }
 
     

@@ -154,33 +154,6 @@
         background-color:  rgb(223, 90, 50);;
     }
 
-    .genero {
-        margin: 15px 0;
-        display: flex;
-    }
-
-    .genero i {
-        border-radius: 50%;
-        padding: 15px;
-        cursor: pointer;
-        margin: 0 10px;
-        border: solid thin burlywood;
-        color: rgb(235, 161, 64);
-        transition: background-color 0.3s ease;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-    }
-
-    .genero i:hover {
-        background: rgb(255, 220, 175);
-    }
-
-
-    .generoPalabra{
-        display: block;
-        text-align: center;
-        font-size: 12px;
-    }
-
     @media screen and (max-width: 750px) {
         html {
             font-size: 12px;

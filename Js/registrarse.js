@@ -8,12 +8,14 @@ formRegistro.addEventListener("submit", function(e)
     const apellFort = document.getElementById("apellidos").value;
     const emailFort = document.getElementById("email").value;
     const contraseñaFort = document.getElementById("password").value;
+    const genderFort = document.getElementById("genero").value;
 
     const newUser = {
         nombre: nameFort,
         apellido: apellFort,
         correo: emailFort,
-        pass: contraseñaFort
+        pass: contraseñaFort,
+        gender: genderFort
     }
 
     localStorage.setItem("user", JSON.stringify(newUser));

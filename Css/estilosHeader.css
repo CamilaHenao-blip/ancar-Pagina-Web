@@ -59,7 +59,6 @@ body {
     margin-right: 30px;
     font-size: 1.5rem;
     color: rgb(255, 193, 100);
-    /*color: rgb(144, 12, 63);*/
     display: block;
     font-weight: 600;
     transition: all 0.5s ease;
@@ -69,6 +68,25 @@ body {
     color: #c52e00;
 }
 
+/*user*/
+
+.userU{
+    display: none;
+}
+
+.ea{
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: rgb(255, 193, 100);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ea:hover{
+    color: #c52e00; 
+}
+
+/*Menu*/
 #menu { 
     display: none;
 }
@@ -266,6 +284,12 @@ body {
         display: flex;
         justify-content: right;
     }
+
+    /*userU*/
+    .ea{
+        color: rgb(206, 139, 84);
+    }
+
 }
 
 /*medida para tablet*/
