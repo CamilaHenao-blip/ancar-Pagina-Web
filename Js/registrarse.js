@@ -1,7 +1,5 @@
 let formRegistro = document.getElementById("registroF");
 
-console.log(formRegistro)
-
 formRegistro.addEventListener("submit", function(e)
 {
     e.preventDefault();
