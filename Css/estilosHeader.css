@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-* { 
+* {
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none; 
+    list-style: none;
 }
 
 body {
-    background-color: #fffef9; 
+    background-color: #fffef9;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -45,12 +45,12 @@ body {
     transition: 0.7s;
 }
 
-.logo { 
+.logo {
     color: black;
     padding: 25px;
 }
 
-.menu .navHeader ul li { 
+.menu .navHeader ul li {
     position: relative;
     float: left;
 }
@@ -64,17 +64,17 @@ body {
     transition: all 0.5s ease;
 }
 
-.menu .navHeader ul li a:hover{
+.menu .navHeader ul li a:hover {
     color: #c52e00;
 }
 
 /*user*/
 
-.userU{
+.userU {
     display: none;
 }
 
-.ea{
+.ea {
     margin-right: 20px;
     font-size: 1.5rem;
     color: rgb(255, 193, 100);
@@ -82,18 +82,20 @@ body {
     cursor: pointer;
 }
 
-.ea:hover{
-    color: #c52e00; 
+.ea:hover {
+    color: #c52e00;
 }
 
 /*Menu*/
-#menu { 
+#menu {
     display: none;
 }
 
-.closeMenu{display: none;}
+.closeMenu {
+    display: none;
+}
 
-.menuImg { 
+.menuImg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +110,7 @@ body {
 
 
 /*Carrusel*/
-.carrusel{
+.carrusel {
     position: relative;
     top: 0;
     left: 0;
@@ -130,13 +132,13 @@ body {
     position: relative;
 }
 
-.carrusel img{
+.carrusel img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.textoCarrusel{
+.textoCarrusel {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -147,12 +149,12 @@ body {
     padding: 10px;
 }
 
-.textoCarrusel h2{
+.textoCarrusel h2 {
     font-size: 3vw;
     margin-top: 10px;
 }
 
-.textoCarrusel p{
+.textoCarrusel p {
     font-size: 2vw;
     margin: 0;
     padding: 10px;
@@ -160,12 +162,12 @@ body {
 
 /*Footer*/
 
-.contenedorFooter{
+.contenedorFooter {
     background-color: black;
     padding: 30px;
 }
 
-.footerRow{
+.footerRow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,80 +179,96 @@ body {
 
 }
 
-.linksFooter a{
+.linksFooter a {
     color: #f58505;
     transition: all 0.5s ease;
 }
 
-.linksFooter a:hover{
+.linksFooter a:hover {
     color: #f53505;
     transform: translateY(-5px);
 }
 
-.linksFooter h4{
+.linksFooter h4 {
     padding: 20px;
     text-align: center;
 
 }
 
-.elementos ul{
+.elementos ul {
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-.elementos ul li{
+.elementos ul li {
     margin-right: 10px;
 }
 
-.elementos ul li a{
+.elementos ul li a {
     display: inline-block;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
 }
 
-.social a i{
+.social a i {
     margin-right: 10px;
     font-size: 30px;
 }
 
-.derechos{
-    color: #fff;  
+.derechos {
+    color: #fff;
     text-align: center;
 }
 
 
 /*Animación para el carrusel*/
-@keyframes slide{
-    0% { margin-left: 0; }
-    25% { margin-left: 0; }
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
 
-    40% { margin-left: -100%; }
-    55% { margin-left: -100%; }
+    25% {
+        margin-left: 0;
+    }
 
-    80% { margin-left: -200%; }
-    100% { margin-left: -200%; }
-} 
+    40% {
+        margin-left: -100%;
+    }
+
+    55% {
+        margin-left: -100%;
+    }
+
+    80% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
 
 
 /*menú repositive*/
-@media (max-width: 840px) {  
-    .navHeader { 
+@media (max-width: 840px) {
+    .navHeader {
         position: fixed;
         top: 0;
-        right: -100%; /* Menú oculto por defecto */
+        right: -100%;
+        /* Menú oculto por defecto */
         background: rgb(117, 57, 7);
         width: 250px;
         height: 100vh;
         flex-direction: column;
-        transition: right 0.3s ease; 
+        transition: right 0.3s ease;
     }
 
     .navHeader.active {
-        right: 0; 
+        right: 0;
     }
 
     /* Estilos para el boton de cierre ("X") */
@@ -264,12 +282,13 @@ body {
         cursor: pointer;
     }
 
-    .menu .navHeader ul { 
+    .menu .navHeader ul {
         flex-direction: column;
-        margin-top: 50px; /* Espacio debajo del botón de cierre */
+        margin-top: 50px;
+        /* Espacio debajo del botón de cierre */
     }
 
-    .menu .navHeader ul li { 
+    .menu .navHeader ul li {
         margin-top: 40px;
         margin-left: 0;
         margin-right: 20px;
@@ -279,49 +298,51 @@ body {
         color: rgb(206, 139, 84);
     }
 
-    #menuImagen { 
+    #menuImagen {
         margin-bottom: 20px;
         display: flex;
         justify-content: right;
     }
 
     /*userU*/
-    .ea{
+    .ea {
         color: rgb(206, 139, 84);
     }
 
 }
 
 /*medida para tablet*/
-@media (max-width: 810px) {  
-    .textoCarrusel h2 {font-size: 45px;}
-    
-    .textoCarrusel p {
-         font-size: 22px;
-         padding: 10px;
-        }
-
-    .logo {
-       padding: 7px;
+@media (max-width: 810px) {
+    .textoCarrusel h2 {
+        font-size: 45px;
     }
 
-    .menuImg{ 
+    .textoCarrusel p {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .logo {
+        padding: 7px;
+    }
+
+    .menuImg {
         width: 20%;
     }
 
-    
+
 }
 
 /*medida para celular*/
-@media (max-width: 480px) {  
+@media (max-width: 480px) {
     .textoCarrusel h2 {
         font-size: 30px;
     }
-    
+
     .textoCarrusel p {
-         font-size: 18px;
-         padding: 10px;
-        }
+        font-size: 18px;
+        padding: 10px;
+    }
 
     .menu label {
         transform: translateY(-10px);

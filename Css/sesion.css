@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,182 +9,184 @@
     list-style: none;
 }
 
-    body{
-        display: flex;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../Img/highlights-caramelo\ \(1\).jpg);
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header a {
+    font-size: 20px;
+    color: black;
+}
+
+.header a:hover {
+    color: orange;
+}
+
+.contenedorSesion {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.informacion {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.infoSesion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.infoSesion h2 {
+    font-size: 2.5rem;
+}
+
+.infoSesion p {
+    margin: 15px 0;
+}
+
+.infoSesion a {
+    color: #333;
+    background-color: transparent;
+    outline: none;
+    border: solid 2px burlywood;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.infoSesion a:hover {
+    background-color: burlywood;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.inicioInformacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+
+.inicioInformacionChilds {
+    padding: 0 30px;
+}
+
+.inicioInformacionChilds h2 {
+
+    font-size: 2rem;
+}
+
+/*Registro*/
+
+.form {
+    margin: 10px;
+}
+
+.form .datos label {
+    display: flex;
+    border: solid thin rgb(248, 140, 68);
+    margin-bottom: 15px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .1);
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+.form input[type="submit"] {
+    background-color: rgb(248, 140, 68);
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(223, 90, 50);
+    ;
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    html {
+        font-size: 10px;
+    }
+
+    .contenedorSesion {
         align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-image: url(../Img/highlights-caramelo\ \(1\).jpg);
-        background-size: cover;
-    }
-
-    .header{
-        position: absolute;
-        padding:10px;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 1000;
-    }
-
-    .header a{
-        font-size: 20px;
-        color: black;
-    }
-
-    .header a:hover {
-        color: orange;
-    }
-
-    .contenedorSesion{
-        display: flex;
-        border-radius: 20px;
-        box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
-        height: 500px;
-        max-width: 900px;
-        transition: all 1s ease;
-        margin: 10px;
-        overflow:hidden;
-    }
-
-    .informacion{
-        width: 40%;
-        display: flex;
-        align-items: center;
-        background-color: bisque;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-
-    .infoSesion{
-        display: flex;
-        align-items: center;
+        margin: 30px 0 30px 0;
+        height: auto;
         flex-direction: column;
-        width: 100%;
-        padding: 0 30px;
     }
 
-    .infoSesion h2{
-       font-size: 2.5rem;
-    }
-
-    .infoSesion p{ 
-        margin: 15px 0;}
-
-    .infoSesion a{
-        color: #333;
-        background-color: transparent;
-        outline: none;
-        border: solid 2px burlywood;
-        border-radius: 20px;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color .3s ease;
-    }
-
-    .infoSesion a:hover{
-        background-color: burlywood;
-        border: none;
-        color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-    }
-
-    .inicioInformacion{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 60%;
-        background-color: #fff;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+    .informacion {
+        width: 90%;
         padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+
     }
 
-    .inicioInformacionChilds {
-        padding: 0 30px;
+    .inicioInformacion {
+        width: 90%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
     }
-
-    .inicioInformacionChilds h2 {
-      
-        font-size: 2rem;
-    }
-
-    /*Registro*/
-
-    .form {
-        margin: 10px;
-    }
-
-    .form .datos label {
-        display: flex;
-        border: solid thin rgb(248, 140, 68);
-        margin-bottom: 15px;
-        align-items: center;
-        border-radius: 20px;
-        padding: 0 10px;
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, .1);
-    }
-
-    .form label input{
-        width: 100%;
-        padding: 10px;
-        background-color: #fff;
-        border: none;
-        outline: none;
-        border-radius: 20px;
-        color: #333;
-    }
-
-    .form input[type="submit"] {
-        background-color: rgb(248, 140, 68);
-        color: #fff;
-        border-radius: 20px;
-        padding: 10px 15px;
-        cursor: pointer;
-        margin-top: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-    }
-
-    .form input[type="submit"]:hover {
-        background-color:  rgb(223, 90, 50);;
-    }
-
-    @media screen and (max-width: 750px) {
-        html {
-            font-size: 12px;
-        }
-    }
-
-    @media screen and (max-width: 580px) {
-        html {
-            font-size: 10px;
-        }
-
-        .contenedorSesion {
-            align-items: center;
-            margin: 30px 0 30px 0;
-            height: auto;
-            flex-direction: column;
-        }
-
-        .informacion{
-            width: 90%;
-            padding: 20px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom-left-radius: 0;
-
-        }
-
-        .inicioInformacion{
-            width: 90%;
-            padding: 20px;
-            border-bottom-left-radius: 20px;
-            border-top-right-radius: 0;
-        }
-    }
+}

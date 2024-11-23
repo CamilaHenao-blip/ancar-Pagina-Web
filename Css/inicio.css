@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 }
 
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,9 +19,9 @@ body{
     background-size: cover;
 }
 
-.header{
+.header {
     position: absolute;
-    padding:10px;
+    padding: 10px;
     top: 0;
     left: 0;
     right: 0;
@@ -31,7 +31,7 @@ body{
     z-index: 1000;
 }
 
-.header a{
+.header a {
     font-size: 20px;
     color: black;
 }
@@ -48,7 +48,7 @@ body{
     max-width: 900px;
     transition: all 1s ease;
     margin: 10px;
-    overflow:hidden;
+    overflow: hidden;
     transition: all 1s ease;
     background: rgb(255, 226, 188);
 
@@ -79,7 +79,7 @@ body{
     box-shadow: rgba(0, 0, 0, .1);
 }
 
-.form label input{
+.form label input {
     width: 100%;
     padding: 10px;
     background-color: #fff;
@@ -146,7 +146,8 @@ body{
     html {
         font-size: 12px;
     }
-    #botones a{
+
+    #botones a {
         font-size: 16px;
         text-align: center;
     }

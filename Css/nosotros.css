@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-* { 
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none; 
+    list-style: none;
 }
 
-body { 
+body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    
 }
+
 
 .header {
     position: relative;
@@ -44,12 +45,12 @@ body {
     transition: 0.7s;
 }
 
-.logo { 
+.logo {
     padding: 25px;
     color: black;
 }
 
-.menu .navHeader ul li { 
+.menu .navHeader ul li {
     position: relative;
     float: left;
 }
@@ -63,18 +64,18 @@ body {
     transition: all 0.5s ease;
 }
 
-.menu .navHeader ul li a:hover{
+.menu .navHeader ul li a:hover {
     color: #c52e00;
 }
 
 
 /*user*/
 
-.userU{
+.userU {
     display: none;
 }
 
-.ea{
+.ea {
     margin-right: 20px;
     font-size: 1.5rem;
     color: rgb(255, 193, 100);
@@ -82,17 +83,19 @@ body {
     cursor: pointer;
 }
 
-.ea:hover{
-    color: #c52e00; 
+.ea:hover {
+    color: #c52e00;
 }
 
-#menu { 
+#menu {
     display: none;
 }
 
-.closeMenu{display: none;}
+.closeMenu {
+    display: none;
+}
 
-.menuImg { 
+.menuImg {
     margin-right: 20px;
     margin-top: 20px;
     width: 18%;
@@ -105,49 +108,53 @@ body {
 
 /*Main*/
 
-.main{
+.main {
     max-width: 1200px;
     padding: 20px;
-    margin: 80px 30px;
+    margin: 100px auto;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     font-size: 3rem;
     margin: 20px;
 }
 
-.p{
+.p {
     font-size: 1.2rem;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 
 
-.introContenedor img{
+.introContenedor img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
     width: 90%;
+    text-align: justify;
 }
 
 /*Contedor servicios*/
 
 
 
-.serviciosContenedor{
+.serviciosContenedor {
     display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
 }
 
-.ServiciosP{
+.ServiciosP {
     text-align: left;
     display: flex;
     align-items: center;
 }
 
 
-.imgServicios{
+.imgServicios {
     margin-left: 70px;
     display: flex;
     width: 300px;
@@ -155,33 +162,37 @@ body {
 }
 
 
-.imgServicios img{
+.imgServicios img {
     border-radius: 50%;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
+.masInfo {
+    margin-top: 10%;
+}
+
 /*calidad*/
-.calidadContenedor img{
-     display: block;
-     margin-top: 20px;
-     margin-left: auto;
-     margin-right: auto;
-     border-radius: 30px;
-     width: 50%;
+.calidadContenedor img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    width: 50%;
 }
 
 
 
-/*Footer*/ 
+/*Footer*/
 
-.contenedorFooter{
+.contenedorFooter {
     background-color: black;
     padding: 30px;
 }
 
-.footerRow{
+.footerRow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,65 +204,66 @@ body {
 
 }
 
-.linksFooter a{
+.linksFooter a {
     color: #f58505;
     transition: all 0.5s ease;
 }
 
-.linksFooter a:hover{
+.linksFooter a:hover {
     color: #f53505;
     transform: translateY(-5px);
 }
 
-.linksFooter h4{
+.linksFooter h4 {
     padding: 20px;
     text-align: center;
 
 }
 
-.elementos ul{
+.elementos ul {
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-.elementos ul li{
+.elementos ul li {
     margin-right: 10px;
 }
 
-.elementos ul li a{
+.elementos ul li a {
     display: inline-block;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
 }
 
-.social a i{
+.social a i {
     margin-right: 10px;
     font-size: 30px;
 }
 
-.derechos{
-    color: #fff;  
+.derechos {
+    color: #fff;
     text-align: center;
 }
 
-@media (max-width: 840px) {  
-    .navHeader { 
+@media (max-width: 840px) {
+    .navHeader {
         position: fixed;
         top: 0;
-        right: -100%; /* Menú oculto por defecto */
+        right: -100%;
+        /* Menú oculto por defecto */
         background: rgb(117, 57, 7);
         width: 250px;
         height: 100vh;
         flex-direction: column;
-        transition: right 0.3s ease; 
+        transition: right 0.3s ease;
     }
 
     .navHeader.active {
-        right: 0; 
+        right: 0;
     }
 
     /* Estilos para el boton de cierre ("X") */
@@ -262,15 +274,16 @@ body {
         right: 20px;
         font-size: 24px;
         color: #fff;
-        cursor: pointer; 
+        cursor: pointer;
     }
 
-    .menu .navHeader ul { 
+    .menu .navHeader ul {
         flex-direction: column;
-        margin-top: 50px; /* Espacio debajo del botón de cierre */
+        margin-top: 50px;
+        /* Espacio debajo del botón de cierre */
     }
 
-    .menu .navHeader ul li { 
+    .menu .navHeader ul li {
         margin-top: 50px;
         margin-left: 0;
         margin-right: 20px;
@@ -280,50 +293,52 @@ body {
         color: rgb(206, 139, 84);
     }
 
-    #menuImagen { 
+    #menuImagen {
         margin-bottom: 20px;
         display: flex;
         justify-content: right;
     }
 
     /*servicios contenedor*/
-    .serviciosContenedor{
+    .serviciosContenedor {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-      
-.imgServicios{
-    margin: 0;
-}
-.calidadContenedor img{
-    width: 90%;
-}
 
- /*userU*/
- .ea{
-    color: rgb(206, 139, 84);
-}
+    .imgServicios {
+        margin: 0;
+    }
 
-    
+    .calidadContenedor img {
+        width: 90%;
+    }
+
+    /*userU*/
+    .ea {
+        color: rgb(206, 139, 84);
+    }
+
+
 }
 
 
 
 /*medida para celular*/
-@media (max-width: 480px) { 
-    html{
+@media (max-width: 480px) {
+    html {
         font-size: 15px;
-    } 
+    }
+
     .textoCarrusel h2 {
         font-size: 30px;
     }
-    
+
     .textoCarrusel p {
-         font-size: 18px;
-         padding: 10px;
-        }
+        font-size: 18px;
+        padding: 10px;
+    }
 
     .logo {
         font-size: 20px;
@@ -334,9 +349,8 @@ body {
     }
 
     /*servicios Contenedor*/
-    .imgServicios{
+    .imgServicios {
         width: 200px;
         height: 200px;
     }
 }
-

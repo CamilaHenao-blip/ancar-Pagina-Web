@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,19 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Registro o inicio de sesión</title>
 </head>
+
 <body>
-    
+
     <header class="header">
-        <a href="../index.html" class="logo"><h3>Ancar</h3></a>
+        <a href="../index.html" class="logo">
+            <h3>Ancar</h3>
+        </a>
         <nav>
             <ul>
                 <li>
-                    <a href="../index.html"><h3>Inicio</h3></a>
+                    <a href="../index.html">
+                        <h3>Inicio</h3>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -24,7 +30,8 @@
         <div class="informacion">
             <div class="infoSesion">
                 <h2>Bienvenid@</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt harum illum, quasi, hic est amet cupiditate reprehenderit sit natus ratione, fugiat quas aliquid voluptatem. 
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt harum illum, quasi, hic est amet
+                    cupiditate reprehenderit sit natus ratione, fugiat quas aliquid voluptatem.
                     In harum odio numquam quos veniam.</p>
                 <a href="../Html/inicio.html">Iniciar sesión</a>
             </div>
@@ -38,42 +45,43 @@
                 <h2>Crear cuenta</h2>
             </div>
 
-        <!-- Registro de sesión -->
+            <!-- Registro de sesión -->
 
-        <form class="form" id="registroF">
-            <div class="datos">
-                <label >
-                    <i class="user"></i>
-                    <input type="text" placeholder="Primer nombre" id="nombres" name="nombres" required>
-                </label>
-                <label >
-                    <input type="text" placeholder="Primer apellido" id="apellidos" name="apellidos" required>
-                </label>
-                <label >
-                    <i class='bx bx-envelope'></i>
-                    <input type="email" placeholder="E-mail" id="email" name="email" required>
-                </label>
+            <form class="form" id="registroF">
+                <div class="datos">
+                    <label>
+                        <i class="user"></i>
+                        <input type="text" placeholder="Primer nombre" id="nombres" name="nombres" required>
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Primer apellido" id="apellidos" name="apellidos" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="E-mail" id="email" name="email" required>
+                    </label>
+
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Contraseña" id="password" name="password" required>
+                    </label>
+
+                    <label>
+                        <i class='bx bx-male-female'></i>
+                        <input type="text" placeholder="Generó" id="genero" name="genero" required>
+                    </label>
+
+                </div>
 
                 <label>
-                    <i class='bx bx-lock-alt'></i>
-                    <input type="password" placeholder="Contraseña" id="password" name="password" required>
+                    <input type="submit" value="Resgistrarse">
                 </label>
 
-                <label>
-                    <i class='bx bx-male-female'></i>
-                    <input type="text" placeholder="Generó" id="genero" name="genero" required>
-                </label>
-
-            </div>
-                
-                <label>
-                 <input type="submit" value="Resgistrarse">
-                </label>
-                
             </form>
         </div>
     </div>
 
     <script src="../Js/registrarse.js"></script>
 </body>
+
 </html>
